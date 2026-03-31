@@ -1,0 +1,41 @@
+# 🔹 Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 🔹 Virtual Environment
+venv/
+env/
+ENV/
+
+# 🔹 Django
+db.sqlite3
+*.log
+media/
+
+# 🔹 Environment variables (IMPORTANT)
+.env
+
+# 🔹 Static files (collected)
+staticfiles/
+
+# 🔹 Migrations (optional)
+# Uncomment if you want clean repo (not recommended for beginners)
+# students/migrations/*
+# !students/migrations/__init__.py
+
+# 🔹 IDE / Editor
+.vscode/
+.idea/
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+# 🔹 Coverage / testing
+.coverage
+htmlcov/
+
+# 🔹 Temporary files
+*.swp
+*.swo

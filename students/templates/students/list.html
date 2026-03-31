@@ -1,0 +1,26 @@
+{% extends 'students/base.html' %}
+
+{% block content %}
+<a href="{% url 'student_create' %}" class="btn">Add Student</a>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Roll No</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for s in students %}
+    <tr>
+        <td>{{ s.name }}</td>
+        <td>{{ s.email }}</td>
+        <td>{{ s.rollno }}</td>
+        <td>
+            <a href="{% url 'student_update' s.id %}" class="btn">Edit</a>
+            <a href="{% url 'student_delete' s.id %}" class="btn btn-danger">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
